@@ -26,7 +26,7 @@ internal class Program
     }
     static Bitmap Resize(Bitmap image)
     {
-        int max_width = 96;
+        int max_width = 450;
         double width_offset = 2.5;
         double height = image.Height / width_offset * max_width / image.Width;
         if (image.Width > max_width || image.Height > height)
