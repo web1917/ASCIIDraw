@@ -11,7 +11,7 @@ internal class Program
         Console.ReadKey();
         while (true)
         {
-            var bitmap = new Bitmap("./test.jpg");
+            var bitmap = new Bitmap("./test4.jpg");
             bitmap = Resize(bitmap);
             bitmap.ToGrayGaradient();
             ASCIIDraw.ImageConverter converter = new ASCIIDraw.ImageConverter(bitmap);
@@ -26,7 +26,7 @@ internal class Program
     }
     static Bitmap Resize(Bitmap image)
     {
-        int max_width = 450;
+        int max_width = 96;
         double width_offset = 2.5;
         double height = image.Height / width_offset * max_width / image.Width;
         if (image.Width > max_width || image.Height > height)
